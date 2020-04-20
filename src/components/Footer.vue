@@ -5,12 +5,12 @@
                 <ul class="footer__list">
                     <li class="footer__item">
                         <a href="https://github.com/junjun0103" target="_blank" class="footer__link">
-                            <span class="footer__link__icons"><i class="fab fa-github "></i></span>https://github.com/junjun0103
+                            <span class="footer__link__icons"><i class="fab fa-github "></i></span>github
                         </a>
                     </li>
                     <li class="footer__item">
-                        <a href="https://www.linkedin.com/in/jun-lee-19a7231a7/" class="footer__link">
-                            <span class="footer__link__icons"><i class="fab fa-linkedin"></i></span>https://www.linkedin.com/in/jun-lee-19a7231a7/
+                        <a href="https://www.linkedin.com/in/jun-lee-19a7231a7/" target="_blank" class="footer__link">
+                            <span class="footer__link__icons"><i class="fab fa-linkedin"></i></span>Linkedin
                         </a>
                     </li>
                 </ul>
