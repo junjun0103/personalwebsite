@@ -14,13 +14,9 @@
     <section class="section section-experiences"> 
       <app-experiences></app-experiences>
     </section>
-
-    <section class="section section-abilities"> 
-
-    </section>
-
+    <!-- projects -->
     <section class="section section-projects"> 
-
+      <app-projects></app-projects>
     </section>
 
     <section class="section section-contact"> 
@@ -36,6 +32,7 @@ import Navbar from './components/Navbar.vue'
 import Header from './components/Header.vue'
 import Profile from './components/Profile.vue'
 import Experiences from './components/Experiences.vue'
+import Projects from './components/Projects.vue'
 import Footer from './components/Footer.vue'
 export default {
   components:{
@@ -44,6 +41,7 @@ export default {
     appHeader:Header,
     appProfile:Profile,
     appExperiences:Experiences,
+    appProjects:Projects,
   }
 }
 </script>
@@ -80,7 +78,6 @@ export default {
     line-height: 1.7;
     //color: var(--color-grery-2);
 }
-
 
 .heading-primary{
     backface-visibility: hidden;  /* incase if the animation is shaking*/

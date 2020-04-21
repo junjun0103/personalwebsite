@@ -201,7 +201,7 @@
             <div class="column is-5">
                 <p>
                     <strong>IoT Idea Contest 3rd place</strong><br>
-                    Small and medium-sized ventures, students, and individual developers from all over the country submitted 246 ideas. I was ranked third after conducting three fair evaluations with IoT-related experts such as the government, academia, and research institutes.
+                    For this competition, 246 ideas submitted from ventures, students, and individuals. Among them, I was ranked third after conducting three layers of fair evaluations with IoT-related experts such as the government, academia, and research institutes.
                 </p>
             </div>
         </div>
