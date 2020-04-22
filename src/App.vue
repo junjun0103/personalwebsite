@@ -134,9 +134,6 @@ export default {
   }
 }
 
-.section-experiences{
-  
-}
 
   
 </style>
