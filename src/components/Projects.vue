@@ -14,27 +14,41 @@
                  <div class="projects__div" v-on:click="showFirstModal = !showFirstModal">
                     <figure class="projects__div__shape">
                         <img src="../assets/img/leesmemo/Leesmemo_main.png" alt="1" class="projects__div__img">
-                        <figcaption class="projects__div__caption">Jun Lee</figcaption>
+                        <figcaption class="projects__div__caption">
+                            Lee's memo app
+                            <hr>
+                            android, SQLite
+                        </figcaption>
                     </figure>
                 </div>
-
             </div>
             <div class="column is-one-third-desktop is-two-fifths-tablet">
-                <div class="projects__div" v-on:click="showSecondModal = !showSecondModal">
-                    <figure class="projects__div__shape">
-                        <img src="../assets/img/gafa/gafa_main.jpg" alt="2" class="projects__div__img">
-                        <figcaption class="projects__div__caption">Jun Lee</figcaption>
-                    </figure>
+                <div class="projects__div" >
+                    <a href="https://gafa.co.nz/" target="_blank">
+                        <figure class="projects__div__shape" >
+                            <img src="../assets/img/gafa/gafa_main.jpg" alt="2" class="projects__div__img">
+                            <figcaption class="projects__div__caption">
+                                GAFA hompage
+                                <hr>
+                                vue.js, Bootstrap, PHP, MySQL
+                            </figcaption>
+                        </figure>
+                    </a>
                 </div>
             </div>
         </div>
 
+
         <div class="columns is-centered mt-2">
             <div class="column is-one-third-desktop is-two-fifths-tablet">
-                 <div class="projects__div" v-on:click="showThirdModal = !showThirdModal">
+                 <div class="projects__div">
                     <figure class="projects__div__shape">
                         <img src="../assets/img/coming-soon-1.jpg" alt="1" class="projects__div__img">
-                        <figcaption class="projects__div__caption">Jun Lee</figcaption>
+                        <figcaption class="projects__div__caption">
+                            my personal website
+                            <hr>
+                            vue.js, Bulma, modal, PHP, firebase
+                        </figcaption>
                     </figure>
                 </div>
             </div>
@@ -72,7 +86,7 @@
                     </div>
                 </section>
                 <footer class="modal-card-foot">
-                    <button class="button is-success" v-on:click="showFirstModal = !showFirstModal">Close</button>
+                    <!-- <button class="button is-success" v-on:click="showFirstModal = !showFirstModal">Close</button> -->
                 </footer>
             </div>
                 <!-- <button class="test1" aria-label="close" v-on:click="showFirstModal = !showFirstModal"></button> -->
@@ -102,7 +116,7 @@
                     </div>
                 </section>
                 <footer class="modal-card-foot">
-                    <button class="button is-success" v-on:click="showSecondModal = !showSecondModal">Close</button>
+                    <!-- <button class="button is-success" v-on:click="showSecondModal = !showSecondModal">Close</button> -->
                 </footer>
             </div>
                 <!-- <button class="test1" aria-label="close" v-on:click="showFirstModal = !showFirstModal"></button> -->
@@ -132,7 +146,7 @@
                     </div>
                 </section>
                 <footer class="modal-card-foot">
-                    <button class="button is-success" v-on:click="showThirdModal = !showThirdModal">Close</button>
+                    <!-- <button class="button is-success" v-on:click="showThirdModal = !showThirdModal">Close</button> -->
                 </footer>
             </div>
                 <!-- <button class="test1" aria-label="close" v-on:click="showFirstModal = !showFirstModal"></button> -->
@@ -204,7 +218,7 @@ export default {
         top: 50%;
         left: 50%;
         transform: translate(-50%, 20%);
-        color: black;
+        color: var(--color-green-2);
         text-transform: uppercase;
         font-size: 1.7rem;
         text-align: center;
@@ -220,7 +234,7 @@ export default {
 
     &:hover &__img{
         transform: translateX(-.1rem) scale(1);
-        filter: blur(3px) brightness(80%);
+        filter: blur(3px) brightness(20%);
     }
 }
 .mt-2{

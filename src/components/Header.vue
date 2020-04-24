@@ -23,8 +23,8 @@ export default {
         rgba(#6ab04c, .3) 0%, 
         rgba(#535c68, .5) 100%), url(../assets/img/photo_frame.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
-    min-height: 100vh;
+    background-size: cover;
+    height: 100vh;
     background-attachment:fixed;
 
     &__text-box{

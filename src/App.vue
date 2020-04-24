@@ -20,7 +20,7 @@
     </section>
 
     <section class="section section-contact"> 
-
+      <app-contact></app-contact>
     </section>
     
     <app-footer></app-footer>
@@ -33,6 +33,7 @@ import Header from './components/Header.vue'
 import Profile from './components/Profile.vue'
 import Experiences from './components/Experiences.vue'
 import Projects from './components/Projects.vue'
+import Contact from './components/Contactme.vue'
 import Footer from './components/Footer.vue'
 export default {
   components:{
@@ -42,6 +43,7 @@ export default {
     appProfile:Profile,
     appExperiences:Experiences,
     appProjects:Projects,
+    appContact:Contact,
   }
 }
 </script>
