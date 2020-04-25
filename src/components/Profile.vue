@@ -16,7 +16,7 @@
             <div class="column is-one-fifth-desktop is-one-third-tablet">
                 <div class="profile__div">
                     <figure class="profile__div__shape">
-                        <img src="../assets/img/test.jpg" alt="pserson" class="profile__div__img">
+                        <img src="../assets/img/profile.jpg" alt="pserson" class="profile__div__img">
                         <figcaption class="profile__div__caption">Jun Lee</figcaption>
                     </figure>
                 </div>

@@ -6,20 +6,23 @@
     <section class="section-header"> 
       <app-header></app-header>
     </section>
+    
     <!-- profile -->
-    <section class="section section-profile"> 
+    <section class="section section-profile" id="section-profile"> 
+      <!-- floating navbar -->
+      <app-floatingnavbar></app-floatingnavbar>
       <app-profile></app-profile>
     </section>
     <!-- experiences -->
-    <section class="section section-experiences"> 
+    <section class="section section-experiences" id="section-experiences"> 
       <app-experiences></app-experiences>
     </section>
     <!-- projects -->
-    <section class="section section-projects"> 
+    <section class="section section-projects" id="section-projects"> 
       <app-projects></app-projects>
     </section>
 
-    <section class="section section-contact"> 
+    <section class="section section-contact" id="section-contact"> 
       <app-contact></app-contact>
     </section>
     
@@ -30,6 +33,7 @@
 <script>
 import Navbar from './components/Navbar.vue'
 import Header from './components/Header.vue'
+import Floatingnavbar from './components/Floatingnavbar.vue'
 import Profile from './components/Profile.vue'
 import Experiences from './components/Experiences.vue'
 import Projects from './components/Projects.vue'
@@ -38,12 +42,13 @@ import Footer from './components/Footer.vue'
 export default {
   components:{
     appNavbar:Navbar,
-    appFooter:Footer,
     appHeader:Header,
+    appFloatingnavbar:Floatingnavbar,
     appProfile:Profile,
     appExperiences:Experiences,
     appProjects:Projects,
     appContact:Contact,
+    appFooter:Footer,
   }
 }
 </script>
@@ -63,6 +68,7 @@ export default {
   --color-grery-2:#535c68;
   --color-green-1:#badc58;
   --color-green-2:#6ab04c;
+  --color-black-1:#202020;
   --color-red-1:#ff7979;
   --color-puple-2:#eb4d4b;
   --color-puple-1:#686de0;
@@ -88,7 +94,7 @@ export default {
 
     &--main{
         display: block;
-        font-size: 3.5rem;
+        font-size: 4rem;
         font-weight: 400;
         letter-spacing: .3rem;
         text-transform: uppercase;
@@ -117,7 +123,7 @@ export default {
     &--sub2{  
       color: var(--color-green-2);
       display: block;
-      font-size: 2rem;
+      font-size: 2.5rem;
       font-weight: 400;
       letter-spacing: .3rem;
       font-family: "IBM Plex Sans", sans-serif;
@@ -136,6 +142,8 @@ export default {
   }
 }
 
-
+.section-profile{
+  position: relative;
+}
   
 </style>

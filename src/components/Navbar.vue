@@ -15,21 +15,18 @@
 
             <div id="navbarBasicExample" class="navbar-menu" v-bind:class="{ 'is-active' : showNav }">
                 <div class="navbar-start">
-                    <a class="navbar-item">
+                    <a href="#section-profile" class="navbar-item">
                         Profile
                     </a>
 
-                    <a class="navbar-item">
+                    <a href="#section-experiences" class="navbar-item">
                         Experiences
                     </a>
 
-                     <a class="navbar-item">
-                        Abilities
+                     <a href="#section-projects" class="navbar-item">
+                        Projects
                     </a>
-                     <a class="navbar-item">
-                        Project
-                    </a>
-                     <a class="navbar-item">
+                     <a href="#section-contact" class="navbar-item">
                         Contact
                     </a>
 

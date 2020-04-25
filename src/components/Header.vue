@@ -20,8 +20,8 @@ export default {
 <style scoped lang="scss">
 .header{
     background-image: linear-gradient(to right,
-        rgba(#6ab04c, .3) 0%, 
-        rgba(#535c68, .5) 100%), url(../assets/img/photo_frame.jpg);
+        rgba(#6ab04c, .1) 0%, 
+        rgba(#535c68, .1) 100%), url(../assets/img/photo_frame.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;

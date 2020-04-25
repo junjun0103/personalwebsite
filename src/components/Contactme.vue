@@ -63,30 +63,38 @@ export default {
     &--background{
     height: 43rem;
     background-image: linear-gradient(105deg,
-    rgba(white, .9) 0%, 
-    rgba(white, .9) 50%,
-    transparent 50%),
-    url(../assets/img/contact_background.jpg);
-    background-size: cover;
-    border-radius: 3px;
-    box-shadow: 0 1.5rem 4rem rgba(black , .2);
+            rgba(white, .9) 0%, 
+            rgba(white, .9) 50%,
+            transparent 65%),url(../assets/img/contact_background.jpg);
+            background-size: cover;
     background-repeat:no-repeat;
+    
+        //big-desktop{
+        @media only screen and (max-width: 112.5rem){
+            background-image: linear-gradient(105deg,
+            rgba(white, .9) 0%, 
+            rgba(white, .9) 50%,
+            transparent 65%),url(../assets/img/contact_background.jpg);
+            background-size: cover;
 
-    // tab-land  1200px
+        } //1800px
+            // tab-land  1200px
         @media only screen and (max-width: 75rem){
             background-image: linear-gradient(105deg,
             rgba(white, .9) 0%, 
             rgba(white, .9) 65%,
-            transparent 65%),url(../assets/img/contact_background.jpg);
+            transparent 80%),url(../assets/img/contact_background.jpg);
             background-size: cover;
         }
         @media only screen and (max-width: 56.25rem){
             background-image: linear-gradient(105deg,
             rgba(white, .9) 0%, 
-            rgba(white, .9) 100%,
-            transparent 65%),url(../assets/img/contact_background.jpg);
+            rgba(white, .9) 90%,
+            transparent 98%),url(../assets/img/contact_background.jpg);
             background-size: cover;
         }
+
+
     }
 
     &--form{
