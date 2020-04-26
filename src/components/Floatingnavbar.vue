@@ -1,17 +1,85 @@
 <template>
-    <nav class="navbar">
+    <nav class="navbar" :class="{'navbar__fixed':isFixed}">
         <ul class="navbar__list">
-            <a href="#section-profile"><li class="navbar__item">Profile</li></a>
-            <a href="#section-experiences"><li class="navbar__item">Experiences</li></a>
-            <a href="#section-projects"><li class="navbar__item">Projects</li></a>
-            <a href="#section-contact"><li class="navbar__item">Contact</li></a>
+            <a href="#section-profile" v-smooth-scroll><li class="navbar__item" :class="{'active': isActive}">Profile</li></a>
+            <a href="#section-experiences" v-smooth-scroll><li class="navbar__item" :class="{'active': isActive2}">Experiences</li></a>
+            <a href="#section-projects" v-smooth-scroll><li class="navbar__item" :class="{'active': isActive3}">Projects</li></a>
+            <a href="#section-contact" v-smooth-scroll><li class="navbar__item" :class="{'active': isActive4}">Contact</li></a>
         </ul>
     </nav>
 </template>
 
 <script>
 export default {
-    
+    data () {
+    return {
+        isFixed:false,
+        isActive: false,
+        isActive2: false,
+        isActive3: false,
+        isActive4: false,
+    }
+  },
+  methods: {
+    handleScroll () {
+    const els0 = document.querySelectorAll('.scrollme0')
+      els0.forEach((el) => {
+        const elBottom = el.getBoundingClientRect().bottom
+        if (elBottom <= 0) {
+          this.isFixed = true;
+        } else {
+          this.isFixed=false;
+        } 
+      })
+      const els = document.querySelectorAll('.scrollme')
+      els.forEach((el) => {
+        const elTop = el.getBoundingClientRect().top
+        const elBottom = el.getBoundingClientRect().bottom
+        if (elTop >= 10 || elBottom <= 10) {
+          this.isActive = false
+        } if (elTop <= 10 && elBottom >= 10) {
+          this.isActive = true;
+        } 
+      })
+        const els2 = document.querySelectorAll('.scrollme2')
+      els2.forEach((el) => {
+        const elTop = el.getBoundingClientRect().top
+        const elBottom = el.getBoundingClientRect().bottom
+        if (elTop >= 10 || elBottom <= 10) {
+          this.isActive2 = false
+        } if (elTop <= 10 && elBottom >= 10) {
+          this.isActive2 = true
+        } 
+      })
+       const els3 = document.querySelectorAll('.scrollme3')
+      els3.forEach((el) => {
+        const elTop = el.getBoundingClientRect().top
+        const elBottom = el.getBoundingClientRect().bottom
+        if (elTop >= 10 || elBottom <= 10) {
+          this.isActive3 = false
+        } if (elTop <= 10 && elBottom >= 10) {
+          this.isActive3 = true
+        } 
+      })
+      const els4 = document.querySelectorAll('.scrollme4')
+      els4.forEach((el) => {
+        const elTop = el.getBoundingClientRect().top
+        const elBottom = el.getBoundingClientRect().bottom
+        if (elTop >= 10 || elBottom <= 10) {
+          this.isActive4 = false
+        } if (elTop <= 10 && elBottom >= 10) {
+          this.isActive4 = true
+        } 
+      })
+      
+    }
+  },
+  created() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  destroyed() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
 }
 </script>
 
@@ -20,7 +88,7 @@ export default {
     background-color: var(--color-black-1);
     color: white;
     z-index: 999;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     width: 10rem;
     top: 0rem;
     right: 5rem;
@@ -40,6 +108,7 @@ export default {
     &__fixed{
         top: 6rem;
         position: fixed;
+        transition: all .5s;
     }
     &__list{
         list-style: none;
@@ -65,5 +134,9 @@ export default {
     }
     
 }
+.active{
+    background-color: var(--color-green-2);
+}
+
 </style>
         

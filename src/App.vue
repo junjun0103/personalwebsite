@@ -3,26 +3,26 @@
     <!-- navbar -->
     <app-navbar></app-navbar>
     <!-- header -->
-    <section class="section-header"> 
+    <section class="section-header scrollme0"> 
       <app-header></app-header>
     </section>
     
     <!-- profile -->
-    <section class="section section-profile" id="section-profile"> 
+    <section class="section section-profile scrollme" id="section-profile"> 
       <!-- floating navbar -->
       <app-floatingnavbar></app-floatingnavbar>
       <app-profile></app-profile>
     </section>
     <!-- experiences -->
-    <section class="section section-experiences" id="section-experiences"> 
+    <section class="section section-experiences scrollme2" id="section-experiences"> 
       <app-experiences></app-experiences>
     </section>
     <!-- projects -->
-    <section class="section section-projects" id="section-projects"> 
+    <section class="section section-projects scrollme3" id="section-projects"> 
       <app-projects></app-projects>
     </section>
 
-    <section class="section section-contact" id="section-contact"> 
+    <section class="section section-contact scrollme4" id="section-contact"> 
       <app-contact></app-contact>
     </section>
     
@@ -83,6 +83,7 @@ export default {
     font-family: "IBM Plex Sans", sans-serif;
     font-weight: 400;
     /*font-size: 16px;*/
+    font-size: 1.2rem;
     line-height: 1.7;
     //color: var(--color-grery-2);
 }
@@ -106,7 +107,15 @@ export default {
         /*
         animation-delay: 3s;
         animation-iteration-count: 3;
-        */
+        */ 
+        //tablet
+        @media only screen and (max-width: 75rem){
+          font-size: 3.5rem;
+        }
+        //mobile
+        @media only screen and (max-width: 56.25rem){
+          font-size: 3rem;
+        }
     }
     
     &--sub{
@@ -119,6 +128,14 @@ export default {
         // @include respond(phone){
         //     letter-spacing: .5rem;
         // }
+        //tablet
+        @media only screen and (max-width: 75rem){
+          font-size: 1.5rem;
+        }
+        //mobile
+        @media only screen and (max-width: 56.25rem){
+          font-size: 1.2rem;
+        }
     }
     &--sub2{  
       color: var(--color-green-2);
@@ -128,6 +145,14 @@ export default {
       letter-spacing: .3rem;
       font-family: "IBM Plex Sans", sans-serif;
       margin-bottom: 1rem;
+      //tablet
+        @media only screen and (max-width: 75rem){
+          font-size: 2.2rem;
+        }
+        //mobile
+        @media only screen and (max-width: 56.25rem){
+          font-size: 1.9rem;
+        }
     }
     
 }

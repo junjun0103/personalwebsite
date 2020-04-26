@@ -32,7 +32,16 @@ export default {
         top: 48%;
         right: 4%;
         transform: translate(-50%, -50%);
-
+        //tablet
+        @media only screen and (max-width: 75rem){
+            top: 80%;
+            right: 50%;
+        }
+        //mobile
+        @media only screen and (max-width: 56.25rem){
+            top: 80%;
+            right: 40%;
+        }
     }
 }
 .heading-primary{

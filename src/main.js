@@ -5,9 +5,28 @@ import store from './store'
 import vmodal from 'vue-js-modal' // modal : popup | dialog framwork
 import '@fortawesome/fontawesome-free/css/all.css'  //fontawesome
 import '@fortawesome/fontawesome-free/js/all.js' //fontawesome
+import vueSmoothScroll from 'vue2-smooth-scroll' //smooth scroll
+import VueCookies from 'vue-cookies'  //vue-cookies
+import VueResource from 'vue-resource'  //http
 
-Vue.use(vmodal); //modal framework
+
 require('./assets/scss/main.scss'); // bulma framework
+Vue.use(vmodal); //modal framework
+Vue.use(vueSmoothScroll);
+Vue.use(VueCookies);
+Vue.use(VueResource); //http
+Vue.http.interceptors.push((request,next)=>{
+  console.log(request);
+  if(request.method=='POST'){
+    request.method='PUT';
+  }
+  next(response=>{
+    response.json=()=>{return {messages:response.body}}
+  });
+});
+
+// 30 day after, expire
+Vue.$cookies.config('30d');
 
 Vue.config.productionTip = false
 

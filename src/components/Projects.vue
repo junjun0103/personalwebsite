@@ -2,7 +2,7 @@
     <div class="projects">
         <h1 class="heading-primary">
             <span class="heading-primary--main">Projects</span>
-            <span class="heading-primary--sub">vue.js javascript css scss php mysql</span>
+            <span class="heading-primary--sub">"If you do not walk tody, you will have to run tomorrow."</span>
             <hr class="my-hr-style">
         </h1>
         <div class="columns is-centered">
@@ -43,11 +43,11 @@
             <div class="column is-one-third-desktop is-two-fifths-tablet">
                  <div class="projects__div">
                     <figure class="projects__div__shape">
-                        <img src="../assets/img/coming-soon-1.jpg" alt="1" class="projects__div__img">
+                        <img src="../assets/img/personal_website.jpg" alt="1" class="projects__div__img">
                         <figcaption class="projects__div__caption">
-                            my personal website
+                            Personal website
                             <hr>
-                            vue.js, Bulma, modal, PHP, firebase
+                            vue.js, Bulma, PHP, firebase
                         </figcaption>
                     </figure>
                 </div>
@@ -225,6 +225,7 @@ export default {
         opacity: 0;
         transition: all .5s;
         backface-visibility: hidden;
+        font-family: 'PT Sans', sans-serif;
     }
 
     &:hover &__caption{

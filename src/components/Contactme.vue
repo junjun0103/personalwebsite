@@ -3,7 +3,8 @@
         <div class="contact--background">
             <h1 class="heading-primary">
                 <span class="heading-primary--main">Contact me</span>
-                <!-- <span class="heading-primary--sub">vue.js javascript css scss php mysql</span> -->
+                <span class="heading-primary--sub">
+"There is always a way. The more I say 'I can't do' or 'It's difficult', the more I get away from the solution."<br>-son(softbank CEO)</span>
                 <hr class="my-hr-style">
             </h1>
 
@@ -61,7 +62,7 @@ export default {
     padding: 5rem 0;
 
     &--background{
-    height: 43rem;
+    height: 45rem;
     background-image: linear-gradient(105deg,
             rgba(white, .9) 0%, 
             rgba(white, .9) 50%,

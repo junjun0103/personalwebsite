@@ -10,7 +10,7 @@
             <div class="column is-one-fifth-desktop is-one-third-tablet">
                 <h3><span class="heading-primary--sub2">About me</span></h3>
                 <p>
-                    I am an allround web developer. I am a senior programmer with good knowledge of front-end techniques. I love structure and order and I also stand for quality. I love spending time on fixing little details and optimizing web apps. Also I like working in a team, you'll learn faster and much more. As the saying goes: 'two heads are better than one'.
+                    I am an allround web developer. I wanna be a senior programmer with good knowledge of front-end and back-end techniques. I love UX/UI and order and I also stand for quality. I love spending time on fixing little details and optimizing web apps. Also I like working in a team with using CI/CD tools, you'll learn faster and much deeper.
                 </p>
             </div>
             <div class="column is-one-fifth-desktop is-one-third-tablet">
@@ -62,6 +62,7 @@ p{
         margin-top: 2rem!important;
         margin: 0 auto;
         clip-path:circle(50% at 50% 50%);
+        filter: brightness(80%);
     }
     &__caption{
         position: absolute;

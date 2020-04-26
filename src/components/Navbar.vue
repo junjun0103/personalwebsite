@@ -1,9 +1,9 @@
 <template>
     <div>
-        <nav class="navbar" role="navigation" aria-label="main navigation">
+        <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
-                <a class="navbar-item" href="https://bulma.io">
-                <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+                <a class="navbar-item " href="#section-header">
+                <img src="../assets/img/logo.jpg" alt="logo">
                 </a>
 
                 <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" v-on:click="showNav = !showNav" v-bind:class="{ 'is-active' : showNav }">
@@ -15,18 +15,18 @@
 
             <div id="navbarBasicExample" class="navbar-menu" v-bind:class="{ 'is-active' : showNav }">
                 <div class="navbar-start">
-                    <a href="#section-profile" class="navbar-item">
+                    <a href="#section-profile" class="navbar-item" v-smooth-scroll>
                         Profile
                     </a>
 
-                    <a href="#section-experiences" class="navbar-item">
+                    <a href="#section-experiences" class="navbar-item" v-smooth-scroll>
                         Experiences
                     </a>
 
-                     <a href="#section-projects" class="navbar-item">
+                     <a href="#section-projects" class="navbar-item" v-smooth-scroll>
                         Projects
                     </a>
-                     <a href="#section-contact" class="navbar-item">
+                     <a href="#section-contact" class="navbar-item" v-smooth-scroll>
                         Contact
                     </a>
 
@@ -74,8 +74,12 @@
 export default {
     data(){
         return{
-            showNav:false
+            showNav:false,
         }
     }
 }
 </script>
+
+<style lang="scss" scoped>
+
+</style>

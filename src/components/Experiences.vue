@@ -2,7 +2,7 @@
     <div class="experiences">
         <h1 class="heading-primary">
             <span class="heading-primary--main">Experiences</span>
-            <span class="heading-primary--sub">vue.js react javascript css scss php java mysql</span>
+            <span class="heading-primary--sub">vue.js javascript css scss php java mysql firebase CI/CD tools Azure AWS</span>
             <hr class="my-hr-style my-hr-style__white" >
         </h1>
         
