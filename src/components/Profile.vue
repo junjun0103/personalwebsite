@@ -10,10 +10,10 @@
             <div class="column is-one-fifth-desktop is-one-third-tablet">
                 <h3><span class="heading-primary--sub2">About me</span></h3>
                 <p>
-                    I am an allround web developer. I wanna be a senior programmer with good knowledge of front-end and back-end techniques. I love UX/UI and order and I also stand for quality. I love spending time on fixing little details and optimizing web apps. Also I like working in a team with using CI/CD tools, you'll learn faster and much deeper.
+                    I am an allround web developer. I wanna be a senior programmer with good knowledge of front-end and back-end techniques. I love UX/UI, order and I also stand for quality. I love spending time on fixing little details and optimizing web apps. Also I like working in a team with using CI/CD tools, you'll learn faster and much deeper.
                 </p>
             </div>
-            <div class="column is-one-fifth-desktop is-one-third-tablet">
+            <div class="column is-one-third-desktop is-one-third-tablet">
                 <div class="profile__div">
                     <figure class="profile__div__shape">
                         <img src="../assets/img/profile.jpg" alt="pserson" class="profile__div__img">

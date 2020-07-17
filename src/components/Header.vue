@@ -19,13 +19,24 @@ export default {
 
 <style scoped lang="scss">
 .header{
+    // background-image: linear-gradient(to right,
+    //     rgba(#6ab04c, .1) 0%, 
+    //     rgba(#535c68, .1) 100%), url(../assets/img/photo_frame.jpg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+
     background-image: linear-gradient(to right,
-        rgba(#6ab04c, .1) 0%, 
-        rgba(#535c68, .1) 100%), url(../assets/img/photo_frame.jpg);
+         rgba(#6ab04c, .1) 0%, 
+         rgba(#535c68, .1) 100%), url(../assets/img/photo_frame.jpg);
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     height: 100vh;
     background-attachment:fixed;
+    width: auto;
+    //background-position: center center;
 
     &__text-box{
         position: absolute;
@@ -39,16 +50,28 @@ export default {
         }
         //mobile
         @media only screen and (max-width: 56.25rem){
-            top: 80%;
+            top: 85%;
             right: 40%;
         }
     }
 }
 .heading-primary{
     color: white;
+    @media only screen and (max-width: 75rem){
+            color: black;
+    }
+    @media only screen and (max-width: 56.25rem){
+            color: black;
+    }
     &--sub{
         font-size: 2rem;
         color: white;
+        @media only screen and (max-width: 75rem){
+            color: black;
+        }
+        @media only screen and (max-width: 56.25rem){
+            color: black;
+        }
     }
 }
 </style>

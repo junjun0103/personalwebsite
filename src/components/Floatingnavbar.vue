@@ -89,7 +89,7 @@ export default {
     color: white;
     z-index: 999;
     font-size: 1.3rem;
-    width: 10rem;
+    width: 8rem;
     top: 0rem;
     right: 5rem;
     position: absolute;
@@ -106,7 +106,7 @@ export default {
             display: none;
         }
     &__fixed{
-        top: 6rem;
+        top: 5rem;
         position: fixed;
         transition: all .5s;
     }
@@ -118,7 +118,7 @@ export default {
     }
     &__item{
         color: white;
-        height: 7rem;
+        height: 6rem;
         padding-top: 2.5rem;
         &:hover,
         &:active{
